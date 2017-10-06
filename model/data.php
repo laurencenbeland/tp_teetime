@@ -17,17 +17,17 @@ $user = array('username' => 'password');
 $categories = array (
     '1'=>array(
         NAME=>'Women',
-        IMG=>'images/category-women.jpg',
+        IMG=>'images/category-women.png',
         ALT=>'Women Tee-Shirts',
     ),
     '2'=>array(
         NAME=>'Men',
-        IMG=>'images/category-men.jpg',
+        IMG=>'images/category-men.png',
         ALT=>'Men Tee-Shirts',
     ),
     '3'=>array(
         NAME=>'Kids',
-        IMG=>'images/category-kids.jpg',
+        IMG=>'images/category-kids.png',
         ALT=>'Kids Tee-Shirts',
     ),
 );
