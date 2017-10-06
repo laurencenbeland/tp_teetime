@@ -1,0 +1,804 @@
+/*css TP DESIGN FOR MOBILE FIRST ET SYSTEME DE GRILLES*/
+
+@font-face {
+    font-family: 'helvetica_neueregular';
+    src: url('font/helveticaneue-heavy-webfont.eot');
+    src: url('font/helveticaneue-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/helveticaneue-heavy-webfont.woff2') format('woff2'),
+    url('font/helveticaneue-heavy-webfont.woff') format('woff'),
+    url('font/helveticaneue-heavy-webfont.svg#helvetica_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'helvetica_neueregular', 'Arial', 'sans-serif';
+    margin: 0;
+    padding: 0;
+}
+
+/*************************************/
+/************* DESKTOP ***************/
+/*************************************/
+/*************************************/
+
+/********************************/
+/********** TOP HEADER **********/
+/********************************/
+header {
+    margin-bottom: 30px;
+}
+
+#header_top {
+    width: 100%;
+    height: 30px;
+    background-color: black;
+}
+
+header p {
+    color: white;
+    text-align: center;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+}
+
+/********************************/
+/******* START TOP MENU 1 *******/
+/********************************/
+#header_menu1 {
+    padding: 20px;
+    display: flex;
+}
+
+#header_menu1 img[src*="stamp"] {
+    width: 100%;
+    max-width: 200px;
+    min-width: 150px;
+    height: auto;
+    padding-right: 10px
+}
+
+#div_logo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#div_logo a {
+    width: 100%;
+    max-width: 400px;
+    min-width: 200px;
+    height: auto;
+}
+
+#header_menu1 img[src*="logo"] {
+    width: 100%;
+    height: auto;
+}
+
+/********************/
+/**** SEARCH BAR ****/
+/********************/
+#header_search_shop {
+    display: flex;
+}
+
+#header_align {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-end;
+    align-self: center;
+}
+
+#header_search {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin: 10px;
+}
+
+/**** LOUPE IMG (SEARCH BAR) ****/
+#header_search img {
+    width: 30px;
+    align-self: center;
+}
+
+/**** INPUT (SEARCH BAR) ****/
+#header_search input {
+    max-width: 200px;
+    min-width: 70px;
+    border: none;
+    border-bottom: 3px solid #000;
+    margin-right: 5px;
+    padding: 10px;
+}
+
+/**** PLACEHOLDER (SEARCH BAR) ****/
+#header_search input::placeholder {
+    font-weight: bold;
+}
+
+/**** FOCUS (SEARCH BAR) ****/
+#header_search input:focus {
+    outline: none;
+    border-bottom: 3px solid #C00000;
+}
+
+/**************************/
+/**** SIGN & SHOP CART ****/
+/**************************/
+#header_signin_shopcart {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin: 10px;
+}
+
+/******* SIGN IN *******/
+#header_signin {
+    min-width: 100px;
+    align-self: center;
+}
+
+#header_signin a {
+    text-decoration: none;
+}
+
+#header_signin a span {
+    color: #000;
+}
+
+#header_signin img[src*="triangle"] {
+    width: 10px;
+    margin-left: 5px;
+}
+
+/******* SHOP CART *******/
+#header_shopcart img[src*="shop"] {
+    width: 40px;
+}
+
+/********************************/
+/******* START TOP MENU 2 *******/
+/********************************/
+
+#header_menu2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#header_menu2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#header_menu2 li {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+}
+
+#header_menu2 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    text-decoration: none;
+    color: #000;
+}
+
+.border {
+    border-right: 3px solid #000;
+}
+
+#header_menu2 a:hover {
+    background-color: #000;
+    color: #F1F1F1
+}
+
+/**********************************************/
+/******************** INDEX *******************/
+/********************* PHP ********************/
+/**********************************************/
+
+.p_index {
+    width: 80%;
+    height: 40px;
+    color: #F1F1F1;
+    background-color: #000;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 40px;
+}
+
+#content_index {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#div_category {
+    position: relative;
+    width: 80%;
+    align-self: center;
+    margin: 20px;
+}
+
+#div_category h2 {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: #000;
+}
+
+#div_category img {
+    width: 100%;
+}
+
+/**********************************************/
+/******************** BRAND *******************/
+/********************* PHP ********************/
+/**********************************************/
+
+#content_brand {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+#content_brand img {
+    width: 500px;
+    text-align: center;
+}
+
+/**********************************************/
+/***************** CATALOGUE ******************/
+/********************* PHP ********************/
+/**********************************************/
+
+/**********************************************/
+/****************** CATEGORY ******************/
+/************** WOMEN  MEN  KIDS **************/
+/**********************************************/
+
+
+.catalogue_menu{
+
+}
+
+.category_title {
+    width: 80%;
+    height: 40px;
+    color: #F1F1F1;
+    background-color: #000;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.category_title_ahref {
+    float: left;
+    width: 20%;
+height: 40px;
+color: #F1F1F1;
+background-color: #000;
+text-align: center;
+line-height: 40px;
+}
+
+.category_title_ahref a {
+    text-decoration: none;
+    color: #F1F1F1;
+}
+
+.category_title a{
+    width: 80%;
+    height: 40px;
+    color: #F1F1F1;
+    background-color: #000;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+
+.content_category {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.content_each_product a {
+    text-decoration: none;
+}
+
+.content_each_product {
+    flex: 1 1 33.33%;
+    padding: 1%;
+}
+
+.content_each_product button {
+    color: #fff;
+    width: 100%;
+    background-color: #000;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin : 1px;
+    cursor: pointer;
+}
+
+
+.div_info_product {
+    /* position: relative; */
+    margin :0;
+}
+
+.div_info_product img {
+    width: 100%;
+}
+
+.div_info_product p {
+    color: #FFF;
+    padding: 10px;
+    background-color: #000;
+    text-align: center;
+}
+
+
+/************* OVERLAY / HOVER **************/
+
+/*
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000;
+}
+
+.container_overlay:hover .overlay{
+    position: relative;
+    opacity: 1;
+}
+
+.text_overlay {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+*/
+
+
+
+/************************************/
+/************ NEWLETTERS ************/
+/************************************/
+
+#newsletter {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+#newsletter label {
+    width: 150px;
+    height: 70px;
+    background-color: #000;
+    padding: 10px;
+    color: #FFF;
+    margin-right: 10px;
+    padding-top: 15px;
+}
+
+#newsletter input {
+    width: 400px;
+    height: 70px;
+    color: #000;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px;
+}
+
+/**** FOCUS ****/
+#newsletter input:focus {
+    outline: #000;
+}
+
+/************************************/
+/********** CREDITS CARDS ***********/
+/************************************/
+
+#creditscards img {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+}
+
+/********************************/
+/************ FOOTER ************/
+/********************************/
+
+footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 0;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+#footer_menu div {
+    padding: 1%;
+}
+
+#contact p {
+    margin: 5px 0;
+}
+
+#contact a {
+    color: #F1F1F1;
+    text-decoration: none;
+    margin: 2px 0;
+}
+
+#contact a:hover {
+    color: #FFF;
+    border-bottom: 2px solid #C00000;
+}
+
+.footer_hr {
+    margin: 40px 0 10px 0;
+}
+
+/********************************/
+/********* FOOTER MENU **********/
+/********************************/
+
+#footer_menu {
+    width: 100%;
+    padding: 1%;
+}
+
+/****** FOOTER NAV PRODUCTS & INFORMATIONS ******/
+.footer_nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer_nav li a {
+    text-decoration: none;
+    color: #F1F1F1;
+    border-left: 2px solid #000;
+    padding-left: 5px;
+}
+
+.footer_nav li a:hover {
+    border-left: 3px solid #C00000;
+    color: #FFFFFF;
+}
+
+/****** FOOTER RS ******/
+#footer_rs {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#footer_rs img {
+    width: 50px;
+}
+
+#footer_copyright p {
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+#header_menu2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#header_menu2 li {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+}
+
+#header_menu2 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    text-decoration: none;
+    color: #000;
+}
+
+/************************************/
+/********* END FOOTER MENU **********/
+/************************************/
+/***********************/
+/***systeme de grille***/
+/***********************/
+/***cible tous les elements qui ont un attribut class qui contient "col-" pour les forcer a faire 100% de large */
+[class*="col-"] {
+    width: 100%;
+    float: left; /*on flotte les elements qui ont un tatribut col- pour les aligner*/
+    padding: 5px; /*un leger padding pour que visuellement les colonnes ne soient pas collées les unes aux autres*/
+}
+
+/*il faut l'appliquer au conteneur des elements qui seront sur une meme ligne*/
+.row:after {
+    content: ""; /*on stoppe l'effet de float, pour eviter que les elements suivants remontent*/
+    clear: both;
+    display: block;
+}
+
+/*on definit les classes pour chaque largeur de colonne pour la version desktop*/
+/*largeur d'une colonne pour desktop = 1/12eme*/
+.col-1 {
+    width: 8.33%;
+}
+
+/*largeur 2 colonnes 1/6*/
+.col-2 {
+    width: 16.66%;
+}
+
+/*largeur de 3 colonnes pour desktop 1/4*/
+.col-3 {
+    width: 25%;
+}
+
+/*largeur de 4 colonnes pour desktop 1/3*/
+.col-4 {
+    width: 33.33%;
+}
+
+/*largeur de 5 colonnes pour desktop */
+.col-5 {
+    width: 41.66%;
+}
+
+/*largeur de 6 colonnes pour desktop 1/2*/
+.col-6 {
+    width: 50%;
+}
+
+/*largeur de 7 colonnes pour desktop*/
+.col-7 {
+    width: 58.33%;
+}
+
+/*largeur de 8 colonnes pour desktop 2/3*/
+.col-8 {
+    width: 66.66%;
+}
+
+/*largeur de 9 colonnes pour desktop 3/4*/
+.col-9 {
+    width: 75%;
+}
+
+/*largeur de 10 colonnes pour desktop*/
+.col-10 {
+    width: 83.33%;
+}
+
+/*largeur de 11 colonnes pour desktop*/
+.col-11 {
+    width: 91.66%;
+}
+
+/*largeur de 12 colonnes pour desktop*/
+.col-12 {
+    width: 100%;
+}
+
+/*END STYLES DESKTOP*/
+
+/*************************************/
+/************* MOBILE ***************/
+/*************************************/
+/**STYLES DESKTOP EN BAS DE 600PX***/
+/*************************************/
+
+@media only screen and (max-width: 600px) {
+
+    /********************************/
+    /******* START TOP MENU 1 *******/
+    /********************************/
+    #header_menu1 {
+        padding: 20px;
+        display: flex;
+    }
+
+    #header_menu1 img[src*="stamp"] {
+        width: 100%;
+        max-width: 200px;
+        min-width: 150px;
+        height: auto;
+        padding-right: 10px
+    }
+
+    #div_logo {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+
+    #div_logo a {
+        width: 100%;
+        max-width: 400px;
+        min-width: 200px;
+        height: auto;
+    }
+
+    #header_menu1 img[src*="logo"] {
+        width: 100%;
+        height: auto;
+    }
+
+    /********************/
+    /**** SEARCH BAR ****/
+    /********************/
+    #header_search_shop {
+        display: flex;
+    }
+
+    #header_align {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: flex-end;
+        align-self: center;
+    }
+
+    #header_search {
+        display: flex;
+        justify-content: flex-end;
+        align-self: flex-end;
+        margin: 10px;
+    }
+
+    /**** LOUPE IMG (SEARCH BAR) ****/
+    #header_search img {
+        width: 30px;
+        align-self: center;
+    }
+
+    /**** INPUT (SEARCH BAR) ****/
+    #header_search input {
+        max-width: 200px;
+        min-width: 70px;
+        border: none;
+        border-bottom: 3px solid #000;
+        margin-right: 5px;
+    }
+
+    /**** PLACEHOLDER (SEARCH BAR) ****/
+    #header_search input::placeholder {
+        font-weight: bold;
+    }
+
+    /**************************/
+    /**** SIGN & SHOP CART ****/
+    /**************************/
+    #header_signin_shopcart {
+        display: flex;
+        justify-content: flex-end;
+        align-self: flex-end;
+        margin: 10px;
+    }
+
+    /******* SIGN IN *******/
+    #header_signin {
+        min-width: 100px;
+        align-self: center;
+    }
+
+    #header_signin a {
+        text-decoration: none;
+    }
+
+    #header_signin a span {
+        color: #000;
+    }
+
+    #header_signin img[src*="triangle"] {
+        width: 10px;
+        margin-left: 5px;
+    }
+
+    /******* SHOP CART *******/
+    #header_shopcart img[src*="shop"] {
+        width: 40px;
+    }
+
+    /********************************/
+    /******* START TOP MENU 2 *******/
+    /********************************/
+    #header_menu2 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #header_menu2 ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #header_menu2 li {
+        width: 150px;
+        height: 50px;
+        text-align: center;
+    }
+
+    #header_menu2 a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 50px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .border {
+        border-right: 3px solid #000;
+    }
+
+    #header_menu2 a:hover {
+        background-color: #000;
+        color: #F1F1F1
+    }
+
+}
+
+
+
+
+
+
+
