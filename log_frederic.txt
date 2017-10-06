@@ -1,0 +1,5 @@
+commit cf0d1362b92ff114001431a4af75247d935cbc85
+Author: Frederic Pelaho Kagnoupasse <fpelahok@isimtl.local>
+Date:   Fri Sep 29 12:50:52 2017 -0400
+
+    Ajout fichier README

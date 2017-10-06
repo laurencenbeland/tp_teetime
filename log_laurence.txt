@@ -1,0 +1,18 @@
+commit 5798cc49f696905ebb8e2806acd69fbd7280e03e
+Merge: 732fd12 0ebc87a
+Author: Laurence N. Béland <lbeland@isimtl.local>
+Date:   Thu Oct 5 21:40:24 2017 -0400
+
+    Merge branch 'master' of https://github.com/laurencenbeland/tp_teetime
+
+commit 0ebc87ad3bd28c5afba58f588b2b3cc064ab3f65
+Author: laurencenbeland <32466072+laurencenbeland@users.noreply.github.com>
+Date:   Thu Oct 5 21:33:20 2017 -0400
+
+    Initial commit
+
+commit 732fd124db9211f2864a37c4ca9ef38bc13a2637
+Author: Laurence N. Béland <lbeland@isimtl.local>
+Date:   Thu Oct 5 21:31:41 2017 -0400
+
+    commit initial

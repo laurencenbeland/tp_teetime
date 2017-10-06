@@ -24,7 +24,7 @@ require_once 'views/page_top.php'       // include page_top.php
             if ($prod[CATEGORY] === $cat_id) {
                 $titre = $prod[CATEGORY] ?>
                 <div class="content_each_product">
-                    <a href="product.php?_id=<?= $cat_id ?>" class="container_overlay">
+                    <a href="product.php?prod_id=<?= $prod_id ?>" class="container_overlay">
                         <div class="div_info_product overlay">
                             <img src="<?= $prod[IMG] ?>"/>
                             <div class="text_overlay">

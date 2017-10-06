@@ -12,7 +12,7 @@ if (array_key_exists('cat_id', $_GET) && array_key_exists($_GET['cat_id'], $cate
     exit('VALEUR DE CAT_ID REJETÉ -> EXIT');
 }
 
-require_once 'views/page_top.php'       // include page_top.php
+require_once 'views/page_top.php'
 
 ?>
 
@@ -24,7 +24,7 @@ require_once 'views/page_top.php'       // include page_top.php
             if ($prod[CATEGORY] === $cat_id) {
                 $titre = $prod[CATEGORY] ?>
                 <div class="content_each_product">
-                    <a href="product.php?_id=<?= $cat_id ?>">
+                    <a href="product.php?prod_id=<?= $prod_id ?>">
                         <div class="div_info_product">
                             <img src="<?= $prod[IMG] ?>" class="container_overlay"/>
                             <div class="overlay">
@@ -32,7 +32,8 @@ require_once 'views/page_top.php'       // include page_top.php
                             </div>
                         </div>
                     </a>
-                    <button>Add to cart</button>
+
+                        <button>Add to cart</button>
                 </div>
             <?php }
         } ?>
@@ -40,6 +41,6 @@ require_once 'views/page_top.php'       // include page_top.php
     </div>
 
 <?php
-require_once 'views/page_bottom.php';   // include page_bottom.php
+require_once 'views/page_bottom.php';
 
 
