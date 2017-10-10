@@ -170,6 +170,20 @@ header p {
     width: 40px;
 }
 
+#header_shopcart a{
+    position: relative;
+}
+
+#cart_number{
+    position: absolute;
+    bottom: 55%;
+    left: 35%;
+    color: #FFF;
+    font-weight: normal;
+}
+
+
+
 /********************************/
 /******* START TOP MENU 2 *******/
 /********************************/
@@ -551,6 +565,121 @@ td input {
 
 .size_chart {
     margin-bottom: 20px;
+}
+
+
+
+/******************************/
+/************ CART ************/
+/******************************/
+
+.content_cart {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.cart_title {
+    width: 80%;
+    max-width: 900px;
+    height: 40px;
+    color: #F1F1F1;
+    background-color: #000;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.content_cart ul {
+    background-color: #ededed;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.content_cart li {
+    list-style: none;
+}
+
+.product_info{
+    text-decoration: none;
+    color: #000;
+}
+
+.product_info img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.product_info span {
+    width: 100%;
+    text-align: center;
+}
+
+.product_qty{
+    text-align: center;
+}
+
+.btn_plus{
+   background-color: #000;
+    width: 30px;
+    height: 30px;
+}
+
+.btn_minus{
+    background-color: #000;
+    width: 30px;
+    height: 30px;
+}
+
+.txt_plus {
+    font-size: 25px;
+    padding: 5px;
+    color: #F1F1F1;
+}
+
+.txt_minus {
+    font-size: 25px;
+    padding: 5px;
+    color: #F1F1F1;
+}
+
+.total_bill{
+    width: 100%;
+    height: 60px;
+    color: #F1F1F1;
+    background-color: #000;
+    display: block;
+    margin: auto;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.content_cart form {
+    padding: 0;
+}
+
+.clear_cart {
+    width: 100%;
+    color: #FFF;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #000;
+    height: 50px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.msg_empty{
+    display: block;
+    text-align: center;
+    margin: 50px auto;
 }
 
 /************************************/

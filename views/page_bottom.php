@@ -16,9 +16,9 @@
             <h3>Products</h3>
             <hr>
             <ul>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Kids</a></li>
+                <li><a href="category-women.php?cat_id=1">Women</a></li>
+                <li><a href="category-men.php?cat_id=2">Men</a></li>
+                <li><a href="category-kids.php?cat_id=3">Kids</a></li>
             </ul>
         </div>
         <div class="col-4 footer_nav">

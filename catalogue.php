@@ -32,8 +32,12 @@ require_once 'views/page_top.php'
                     $titre = $prod[CATEGORY] ?>
                     <h3><?= $titre[NAME] ?></h3>
                 <?php } ?>
-                <button>Add to cart</button>
-            </div>
+                <form method="post">
+                    <input type="hidden" name="prod_id" value="<?= $prod_id ?>" />
+                    <button type="submit" name="<?= CART_OP ?>" value="<?= CART_OP_ADD ?>">
+                        <span>Add to cart</span>
+                    </button>
+                </form>            </div>
         <?php } ?>
     </div>
 

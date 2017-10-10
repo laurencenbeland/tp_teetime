@@ -2,8 +2,7 @@
 
 require_once 'model/data.php';
 
-$page_title = 'Accueil';
-require_once 'views/page_top.php'       // include page_top.php
+require_once 'views/page_top.php'
 ?>
 
 
@@ -20,6 +19,6 @@ require_once 'views/page_top.php'       // include page_top.php
     </div>
 
 <?php
-require_once 'views/page_bottom.php';   // include page_bottom.php
+require_once 'views/page_bottom.php';
 
 

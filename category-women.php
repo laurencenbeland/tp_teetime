@@ -32,8 +32,12 @@ require_once 'views/page_top.php'
                             </div>
                         </div>
                     </a>
-
-                        <button>Add to cart</button>
+                    <form method="post">
+                        <input type="hidden" name="prod_id" value="<?= $prod_id ?>" />
+                        <button type="submit" name="<?= CART_OP ?>" value="<?= CART_OP_ADD ?>">
+                            <span>Add to cart</span>
+                        </button>
+                    </form>
                 </div>
             <?php }
         } ?>
